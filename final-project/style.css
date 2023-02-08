@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
+html {
+  -webkit-text-size-adjust: 100%; /* prevent font scaling in landscape orientation on iOS devices */
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  position: relative;
+}
+
+.banner-picture{
+  position: absolute;
+}
+
+.intro{
+  position: absolute;
+  margin-top: 90px;
+}
+
+.self-intro-part{
+  position: absolute;
+  margin-top: 20em;
+  background-color: #16191c;
+  color:#8a8c9b;
+}
+
+figure {
+  max-height: 55vh;
+  overflow: hidden;
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 100px;
+}
+
+img.manhattan {
+  filter: brightness(50%);
+  width: 100%;
+  height: auto;
+  opacity: 1.5;
+  z-index: -100;
+}
+
+img.me,img.me-contact{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+h1,h2,h4,p{
+  font-family: 'Roboto Slab', Arial, Helvetica, serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+ul,li{
+  font-family: 'Roboto Slab', Arial, Helvetica, serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 14px;
+}
+
+h3{
+  font-family: 'Roboto Slab', Arial, Helvetica, serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 6px;
+  font-size: 0.95em;
+  color: #6c6d77;
+}
+
+a:link,a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+a:active{
+  opacity: 1;
+}
+
+a.selected:link {
+  text-decoration: underline;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  z-index: 100;
+}
+
+header {
+  background-color: #264156;
+  display: flex;
+  flex-direction: column;
+  height: 2.5em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+svg.menu{
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 1em;
+}
+
+svg.menu:hover{
+  cursor: pointer;
+}
+
+nav.toggle{
+  display: flex;
+  line-height: 2em;
+  text-align: center;
+  font-family: 'Roboto Slab', Arial, Helvetica, serif;
+  z-index: 100;
+}
+
+header.toggle{
+  height: 13em;
+}
+
+
+#Hi{
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+#quick-intro{
+  text-align: center;
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 0.9em;
+}
+
+.contact{
+  margin-top: 5px;
+}
+
+.contact1{
+  margin-top: 30px;
+}
+
+.contact:last-child{
+  margin-bottom: 60px;
+}
+
+.contact-s{
+  margin-top: 5px;
+}
+
+.contact-s1{
+  margin-top: 30px;
+}
+
+.contact-s:last-child{
+  margin-bottom: 60px;
+}
+
+.section1:last-child{
+  margin-bottom: 50px;
+}
+
+.big-title{
+  color:white;
+  text-decoration: underline;
+}
+
+.title,.title-contact{
+  text-decoration: underline;
+}
+
+.title-other{
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.school-position{
+  font-size: 1.2em;
+}
+
+.section{
+  margin-bottom: 50px;
+}
+
+.firm{
+  color: black;
+  font-size:1em;
+}
+
+footer{
+  font-family: 'Roboto Slab', Arial, Helvetica, serif;
+  padding-bottom: 5em;
+  padding-top: 5em;
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+}
+
+.footer-index{
+  font-family: 'Roboto Slab', Arial, Helvetica, serif;
+  margin-top: 59.5em;
+  color: white;
+  background-color: #16191c;
+}
+
+
+
+@media(min-width: 65em){
+
+  .footer-index{
+    margin-top: 48em;
+  }
+
+  nav{
+    font-family: 'Roboto Slab', Arial, Helvetica, serif;
+    height: 40px;
+    line-height: 1.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 8px;
+  }
+
+  #Hi{
+    margin-left: 80px;
+    margin-right: 40px;
+  }
+  
+  #quick-intro{
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  img.me{
+    display: inline;
+    margin-top: 40px;
+    margin-left: 200px;
+  }
+
+  .self-intro-part{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .intro-contact{
+    padding-right: 100px;
+    line-height: 1.5em;
+    margin-top: 20px;
+  }
+
+  .main-part{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .title{
+    margin-top: 40px;
+    margin-left: 200px;
+  }
+
+  .section{
+    padding-right: 100px;
+    line-height: 1.5em;
+    margin-top: 45px;
+  }
+
+  .other-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .title-other,.title-contact{
+    text-align: left;
+  }
+
+  .title-other{
+    margin-top: -5px;
+  }
+
+  .section1{
+    margin-left: 100px;
+    line-height: 1.5em;
+    margin-top: 45px;
+  }
+
+  .section-L{
+    margin-left: 210px;
+    line-height: 1.5em;
+    margin-top: 45px;
+  }
+
+  .contact-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  img.me-contact{
+    display: inline;
+    margin-top: 40px;
+    margin-left: 450px;
+  }
+
+  .contact-contact{
+    margin-top: 30px;
+  
+  }
+
+  .title{
+    position: fixed;
+    max-width: 40px;
+  }
+
+  svg.menu{
+    display: none;
+  }
+
+
+}
+
+@media only screen and (prefers-color-scheme: dark){
+  header{
+    background-color: rgb(205, 203, 203);
+  }
+
+  .self-intro-part{
+    color: black;
+  }
+
+  img{
+    opacity: 0.9;
+  }
+
+  a:link,a:visited{
+    color: black;
+  }
+
+  #Hi,#quick-intro{
+    color: white;
+  }
+
+  img.manhattan{
+    filter: brightness(90%);
+  }
+
+  .big-title{
+    color:black;
+  }
+
+  .self-intro-part{
+    background-color: white;
+  }
+
+  .main-part,.other-part,.contact-part{
+    background-color: black;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  .title,ul,li,.school-position,.firm,.title-other,.contact-s,.contact-s1,.title-contact{
+    color: white;
+  }
+
+  footer{
+    color: white;
+  }
+
+  .footer-index{
+    color: black;
+    background-color: white;
+  }
+
+
+}
+
